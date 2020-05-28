@@ -1,0 +1,77 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Baloo Bhai 2', cursive;
+    color: #343a68;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    padding: 12px;
+}
+img {
+    border-radius: 100%;
+}
+h2 {
+    margin: 0px;
+    text-align: center;
+    font-size: 1.9rem;
+}
+label,input {
+    font-size: 1.5rem;    
+}
+input {
+    border: none;
+    border-bottom: 1px solid;
+    padding: 10px;
+}
+button {
+    border: none;
+    border-radius: 20px;
+    margin-top: 20px;
+    background-color: #343a68;
+    padding: 5px;
+    font-size: 1.2rem;
+    color: white;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+button:hover {
+    background-color: #444a79;
+}
+a {
+    color: #8895d1;
+    text-decoration: none;
+}
+.box {
+    width: 30%;
+    padding: 10px;
+    background-color: rgba(255,255,255,0.7);
+}
+
+.container {
+    display: flex;
+    flex-direction: column  ;
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
+}
+.container::before {
+    content: "";
+    background: url('/img/flower.jpg') no-repeat center center/cover;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    left: 0;
+    top: 0;
+}
+@media (min-width:350px) and (max-width: 700px) {
+    .box {
+        width: 60%;
+    }
+}
+@media (max-width:349px) {
+    .box {
+        width: 80%;
+    }
+}
